@@ -1,0 +1,115 @@
+1. If a class represents a blueprint what acts as a real object?
+instance
+
+2.What does OOP stand for?
+object oriented programming
+
+3. Name at least 5 types of applications that one can create using Visual Studio
+Class library, Console application, Database project, Device application, Empty project
+
+4. Full form of CTS, CLS, CLR and JIT
+Common Type System, Common Language Specification, Common Language Runtime, Just-In-Time
+
+5. Primitive types are also called as ______bytes________
+
+6. How many values can a byte store
+256
+
+7. How many characters can a Char data type store
+128
+
+8. Name the single-precision datatype in c#
+float
+
+9. What is the size of a double datatype
+8 bytes
+
+10. Full form of POCO
+plain old class object
+
+11. Define a custom type
+class
+
+12. What is an entity
+lightweight persistence domain object
+
+13. Short is also called as _____short int______
+
+14. Long is also called as ____long int_____
+
+15. Can an Unsigned datatype take in negative values?
+no
+
+16. WriteLine is a class inside System namespace - true
+
+17. WriteLine has 19 overloads, so this is an example of what kind of polymorphism?
+Static/Compile Time
+
+19. How do you escape and escape sequence?
+braces
+
+20. Demonstrate the 3 different ways to concatenate strings.
++, {}, and String.Concat/Join
+
+21. How can one search for a particular substring inside a string?
+str.IndexOf
+
+22. String Builder class is more efficient than string because it is immutable true
+
+23. Verbatim Literal removes special characters from a string false
+
+24. What is the function of Garbage Collection in C#?
+safe memory allocation
+
+25. Modulus gives us the quotient.  True
+
+26. What is the difference between Math.Round and Math.Truncate
+Math.Round rounds the number given either up or down dependent on the decimal
+Math.Truncate ignores the decimal and gives the whole number
+
+27. How differently does a && and &  or || and | behave?
+| checks all of the or's before continueing || does not
+& checks the machine code of the given values and compaes the 0's and 1's returning all the 0's over the 1's
+&& makes sure multiple conditions are met before continueing
+
+28. What is a ternary operator more efficient than an if/else statement?
+?
+
+29. What is a null Coalescing operator used for?
+define a default value for nullable value types or reference types
+
+30. XML documentation comments are used to provide tips on Method/Class usages - false
+
+31. Primitive types accept null values - false
+
+32. Demonstrate the three ways one can assign a value from nullable type to non-nullable type.
+use ?
+dunno
+dunno
+
+33. Implicit conversion is valid for converting a larger datatype into smaller - false
+
+34. How can one convert explicitly with minimal dataloss?
+use a smaller number
+
+35. Why should one use TryParse instead of Parse?
+tryparse will not throw an exception if parse fails
+
+36. Arrays store multiple values inside a single variable.  True
+
+37. Arrays are typesafe true
+
+38. An attempt to access an out of bounds index position of an array throws up a compile time error. False
+
+39. Inside which namespace can one find ArrayList?
+Collections
+
+40. Why are switch cases faster than if/elseif/else ?
+require less code
+
+41. What is the difference between a while loop and a do/while loop?
+while might loop but do/while always loops at least once
+
+42. Foreach loop gives us the value at a position in the array false
+
+43. For loop allows one to get the index position of an item in the array true
