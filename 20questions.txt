@@ -1,0 +1,45 @@
+1. Access modifier "Protected" allows access within the containing type but not through derived classes - False
+
+2. A public class can be accessed in another asembly - true
+
+3. How is an output parameter different from other parameter types of a method?
+an output doesnt need to be initialized
+
+4. A static method is accessed through the class name and not the instance of the class - true
+
+5. Mention the two rules to follow while create a parameter array for a method.
+Arrays can be passed as ByVal and ByRef.
+Arrays' elements can always be modified from the function or subroutine.
+
+6. Namespaces are containers of code - true
+
+7. Default parameter values allows you to retain a zero parameter overload without recreating it.  Explain why.
+because it already has a 0, if you set it to a different number you can then replace it
+
+8. Explain classic diamond problem of classes briefly.
+a problem that arise when you have multiple inheritances, if the same method is overriden in both then which is inherited?
+
+9. Interfaces are completely abstract because they can have only private methods.  False
+
+10. Multiple classes can be inherited in a chain of inheritance. - True
+
+11. An explicit implementation of an interface method may be required even if only one interface is inherited by a class.  True
+
+12. An abstract class can be instantiated. - False
+
+13. An interface cannot inherit an abstract class. - True
+
+14. Explain method hiding
+you can hide the implementation of the methods of a base class from the derived class using the new keyword
+
+15. The keyword 'Virtual' is used in the base class and 'override' in the child class to implement polymorphism. - True
+
+16. Partial classes join together to form a single class - true
+
+17. Partial classes can share interface method implementation. - true
+
+18. A dictionary object is of type _______generic collection_______
+
+19. Queue is LIFO - false
+
+20. A list checks for uniqueness of data through a key - false
