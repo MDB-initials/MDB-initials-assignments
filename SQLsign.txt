@@ -1,0 +1,37 @@
+USE [Training]
+GO
+
+/****** Object:  Table [dbo].[PatientAppointments]    Script Date: 5/26/2021 10:56:29 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[PatientAppointments](
+	[PatientID] [int] NOT NULL,
+	[AppointmentID] [int] IDENTITY(1,1) NOT NULL,
+	[VisitDate] [date] NOT NULL,
+	[ConsultantName] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_PatientAppointments] PRIMARY KEY CLUSTERED 
+(
+	[AppointmentID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+/*CRUD*/
+
+insert into [PatientAppointments] ([PatientID], [AppointmentID], [VisitDate], [ConsultantName]) values (142, 1, 2012-01-22, 'Groobles Boy')
+insert into [PatientAppointments] ([PatientID], [AppointmentID], [VisitDate], [ConsultantName]) values (63, 2, 2007-06-12, 'Malf Fredrick')
+insert into [PatientAppointments] ([PatientID], [AppointmentID], [VisitDate], [ConsultantName]) values (85, 3, 1999-07-03, 'Nelf Toob')
+
+Select * From [PatientAppointments]
+
+update [PatientAppointments] set [PatientID]=142, [VisitDate]=2012-01-22, [ConsultantName]='Groobles Boy' where [AppointmentID]=1
+update [PatientAppointments] set [PatientID]=63, [VisitDate]=2007-06-12, [ConsultantName]='Malf Fredrick' where [AppointmentID]=2
+update [PatientAppointments] set [PatientID]=85, [VisitDate]=1999-07-03, [ConsultantName]='Nelf Toob' where [AppointmentID]=3
+
+delete from [PatientAppointments] where [AppointmentID]=1
+delete from [PatientAppointments] where [AppointmentID]=2
+delete from [PatientAppointments] where [AppointmentID]=3
