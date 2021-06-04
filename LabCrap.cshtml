@@ -1,0 +1,15 @@
+﻿@model AssignLab.Models.LabCrap
+@{
+    ViewBag.Title = "LabTest";
+}
+
+@Html.HiddenFor(x => x.Name)
+@Html.HiddenFor(x => x.ID)
+@*<h2>LabTest</h2>*@
+
+<span>
+    @Html.DisplayFor(x => x.Name)
+    @Html.CheckBoxFor(x => x.Check)
+    <br/>
+</span>
+

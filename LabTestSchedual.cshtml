@@ -1,0 +1,49 @@
+﻿@model IEnumerable<AssignLab.Models.LabCrap>
+
+@{
+    ViewBag.Title = "LabTestSchedual";
+}
+
+<h2>LabTestSchedual</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+@using (Html.BeginForm()) {
+<select required name="patient" id="patient">
+    <option>Select</option>
+    <option value="Pt1">Pt1</option>
+    <option value="Pt2">Pt2</option>
+    <option value="Pt3">Pt3</option>
+    <option value="Pt4">Pt4</option>
+    <option value="Pt5">Pt5</option>
+</select>
+<input type="date" name="dstamp" id="dstamp" />
+<br />
+@Html.EditorForModel()
+<input type="submit" value="Submit" class="btn btn-primary /">
+}
+
+@*<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+            @Html.CheckBoxFor(modelItem => item.Check)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>*@
